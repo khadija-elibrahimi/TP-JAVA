@@ -1,0 +1,14 @@
+package Heritqge;
+public class Voiture extends Vehicule {
+    private int nbPortes;
+	
+	public Voiture(String matricule,String marque, int nbPortes) {
+		super(marque,matricule);
+		this.nbPortes=nbPortes;}
+	  @Override
+	  public void stationner() {
+		  System.out.print("la voitue se gare dans une place standard");}
+	  @Override
+	  public void afficher() {
+		  super.afficher();
+		  System.out.println("Le nombre de portes est : " + nbPortes + "\n");}}
